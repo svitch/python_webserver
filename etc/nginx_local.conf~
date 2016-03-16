@@ -4,11 +4,11 @@ server {
     listen 80  default_server;
 
     location ^~ /uploads/ {
-	root /home/sergey/web;
+	root /home/stepan/web;
     }
 
     location ~* \. {
-	root /home/sergey/web/public;
+	root /home/stepan/web/public;
     }
 
     location ^.[^.]$ {

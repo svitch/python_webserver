@@ -1,16 +1,16 @@
 server {
     listen 80 default;
 
-    server_name localhost;
+    server_name _;
 
     access_log /var/log/test.access;
     error_log /var/log/test.error;
 
     location ^~ /uploads/ {
-	root /home/sergey/web;
+	root /home/box/web;
     }
 
     location ~* \. {
-	root /home/sergey/web/public;
+	root /home/box/web/public;
     }
 }
